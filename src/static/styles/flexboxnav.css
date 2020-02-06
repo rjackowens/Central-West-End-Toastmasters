@@ -1,0 +1,16 @@
+.navbar {
+    display: flex !important;
+    align-items: center !important;
+    width: auto !important;
+    margin: 20px !important;
+}
+
+.main-nav li {
+  width: 200px !important;
+  padding-left:30px !important;
+  padding-right:30px !important;
+  margin-left:10px !important;
+  margin-right:10px !important;
+}
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+
+{% block head %}
+<head>
+    <title>{% block title %}{% endblock %} - Central West End Toastmasters</title>
+
+    <link href="/static/styles/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles/flexboxnav.css" rel="stylesheet">
+
+    <div class="header">
+        <div class="main-nav row  center-xs middle-md">
+            <div class="col-xs-12 col-md-3"><a href="home"><img class="logo" src="/static/images/Blue_Logo_CWE.png"
+                        alt=""></a>
+            </div>
+            <ul class="col-xs-12">
+                <li><a href="about">About</a></li>
+                <li><a href="why">Why Toastmasters</a></li>
+                <li><a href="members">Meet Our Members</a></li>
+                <li class="Visiting"><a href="visit">Visiting</a></li>
+            </ul>
+        </div>
+    </div>
+</head>
+{% endblock %}
+
+<body>
+    <div id="content">{% block content %}{% endblock %}</div>
+    <div id="footer">
+        {% block footer %} &copy; Copyright 2020 <a href="http://rjackowens.com/">Jack Owens</a>. {% endblock %}
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+{% extends "base-header.html" %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/home.css') }}">
+
+<body>
+    <div class="welcome-banner">
+        <h2>WELCOME TO CENTRAL WEST END TOASTMASTERS</h2>
+        <i class="sub-header">Where Leaders Are Made</i>
+        <p> </p> <!-- Empty Space -->
+    </div>
+
+    <!-- Background Photo -->
+    <div>
+        <!-- <img class="club-background" src="{{ url_for('static',filename='images/toastmaster_club_bg.jpg') }}"> -->
+        {% include 'carousel-test.html' %}
+        <!-- NOTE: Including the carousel-test.html inherits the bootstrap.min.css which breaks navbar styles  -->
+    </div>
+
+    <!-- Body Content -->
+    <div class="body-content">
+        <p>
+            Central West End Toastmasters is a nonprofit educational organization that operates in 4240 Duncan Avenue for the purpose
+            of promoting communication.
+        </p>
+
+    <!-- <div class='about-page-wrapper'>
+            <div class='row-flex'>
+                <div class='column-flex'>
+                <div class='blue-column-flex'>
+                    Chartered in 1975, San Francisco Toastmasters is a club rich with tradition and members are unified by a common mission: to enrich our lives and the lives of others through our three values: communication, leadership & community.
+                    Skill levels vary from practiced & confident speakers to those of a novice level, ready to conquer fears of public speaking.  We thrive on a mutually supportive (and fun!) environment, which encourages improvement and grants opportunities we provide for prepared speeches, impromptu speaking and constructive evaluations.  It's no surprise that SFTM is one of the largest and most popular clubs in the city.
+                </div>
+                </div>
+                <div class='column-flex'>
+                </div>
+            </div>
+            </div> -->
+
+        <!-- <div class="inline-video">
+            <iframe height="700" width="1400" align="center" src="https://www.youtube.com/embed/383gehepo8M">
+            </iframe>
+        </div> -->
+
+        <p>
+            test 2
+        </p>
+    </div>
+</body>
+
+{% endblock %}
