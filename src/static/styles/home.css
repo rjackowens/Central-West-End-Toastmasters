@@ -1,0 +1,26 @@
+.club-background {
+    display: block; /* Centering */ 
+    margin-left: auto; /* Centering */
+    margin-right: auto; /* Centering */
+    max-width: 75%;
+    width: 75%; 
+    height: 75%;
+}
+
+.welcome-banner {
+    text-align: center;
+}
+  
+.sub-header {
+    text-align: center;
+    text-decoration: slategrey;
+    font-style: italic;
+}
+
+.inline-video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+}
