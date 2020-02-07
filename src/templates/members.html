@@ -1,7 +1,75 @@
 {% extends "base-header.html" %}
-
 {% block content %}
-  <h1>MEMBERS</h1>
-  <p class="important">
-    MEMBERS PAGE.
+
+<head>
+  <link rel="stylesheet" href="{{ url_for('static',filename='styles/image-grid.css') }}" rel="stylesheet">
+</head>
+
+<h1 style="color:black;text-align:center;margin:20px auto">Our Officers</h1>
+
+<div class="section">
+  <ul class="grid">
+    <li>
+      <div class="box img-1">
+        <div class="info">
+          <a href="https://www.linkedin.com/in/rjackowens/">
+            <img class="portrait" src="{{ url_for('static',filename='images/jack_portrait.jpg') }}" alt="">
+            <p> Jack Owens - VP, Public Relations </p>
+          </a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="box img-2">
+        <div class="info">
+          <a href="https://www.linkedin.com/in/rjackowens/">
+            <img class="portrait" src="{{ url_for('static',filename='images/jack_portrait.jpg') }}" alt="">
+            <p> Jack Owens - VP, Public Relations </p>
+          </a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="box img-3">
+        <div class="info">
+          <a href="https://www.linkedin.com/in/rjackowens/">
+            <img class="portrait" src="{{ url_for('static',filename='images/jack_portrait.jpg') }}" alt="">
+            <p> Jack Owens - VP, Public Relations </p>
+          </a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="box img-4">
+        <div class="info">
+          <a href="https://www.linkedin.com/in/rjackowens/">
+            <img class="portrait" src="{{ url_for('static',filename='images/jack_portrait.jpg') }}" alt="">
+            <p> Jack Owens - VP, Public Relations </p>
+          </a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="box img-5">
+        <div class="info">
+          <a href="https://www.linkedin.com/in/rjackowens/">
+            <img class="portrait" src="{{ url_for('static',filename='images/jack_portrait.jpg') }}" alt="">
+            <p> Jack Owens - VP, Public Relations </p>
+          </a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="box img-6">
+        <div class="info">
+          <a href="https://www.linkedin.com/in/rjackowens/">
+            <img class="portrait" src="{{ url_for('static',filename='images/jack_portrait.jpg') }}" alt="">
+            <p> Jack Owens - VP, Public Relations </p>
+          </a>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
 {% endblock %}
