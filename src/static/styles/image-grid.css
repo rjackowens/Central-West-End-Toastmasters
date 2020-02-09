@@ -6,7 +6,7 @@
 }
 
 .grid {
-	margin: 20px 0 0 0;
+	margin: 25px 0 0 0;
 	padding: 0;
 	list-style: none;
 	display: block;
@@ -24,8 +24,8 @@
 }
 
 .grid li {
-	width: 228px; /* grid box size */
-	height: 228px; /* grid box size */
+	width: 250px; /* grid box size */
+	height: 250px; /* grid box size */
 	display: inline-block;
 	margin: 20px; /* space between images */
 }
