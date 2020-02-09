@@ -1,6 +1,6 @@
 .about-page-wrapper {
-    margin: 15px;
-    background-color: red;
+    margin: 55px;
+    /* background-color: red; */
   }
   
   .row-flex {
@@ -20,12 +20,13 @@
   .blue-column-flex {
     background-color: blue;
     height: 300px;
+    font-size: 20px
     /* width: 75%; Use double-column-flex instead */
   }
   
   .green-column-flex {
     background-color: green;
-    height: 100px;
+    height: 50px;
   }
   
   .double-column-flex {
