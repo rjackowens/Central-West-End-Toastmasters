@@ -5,9 +5,22 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: docker build -t cwe-toastmasters .
-  displayName: 'Build Docker Image'
-
 - script: |
     ls $(System.DefaultWorkingDirectory)
   displayName: 'Print Working Directory'
+
+- task: CmdLine@2
+  displayName: 'Build Image'
+  inputs:
+    script: 'docker build -t cwe-toastmasters .'
+    workingDirectory: '$(System.DefaultWorkingDirectory)'
+
+- task: ECRPushImage@1
+  displayName: 'Push to ECR'
+  inputs:
+    awsCredentials: 'azure_pipeline'
+    regionName: 'us-east-2'
+    imageSource: 'imagename'
+    sourceImageName: 'cwe-toastmasters'
+    repositoryName: '711744015129.dkr.ecr.us-east-2.amazonaws.com'
+    logResponse: true
