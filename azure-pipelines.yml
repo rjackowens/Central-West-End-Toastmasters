@@ -1,0 +1,13 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: docker build -t cwe-toastmasters .
+  displayName: 'Build Docker Image'
+
+- script: |
+    ls $(System.DefaultWorkingDirectory)
+  displayName: 'Print Working Directory'
