@@ -22,5 +22,5 @@ steps:
     regionName: 'us-east-2'
     imageSource: 'imagename'
     sourceImageName: 'cwe-toastmasters'
-    repositoryName: '711744015129.dkr.ecr.us-east-2.amazonaws.com'
+    repositoryName: 'cwe-toastmasters'
     logResponse: true
