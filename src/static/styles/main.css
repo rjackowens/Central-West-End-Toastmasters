@@ -329,7 +329,9 @@ hr {
 /* --------------- Main Navigation ------------------ */
 
 .header {
-  background: #292929;
+  /* background: #292929; */
+  background-image: url('/static/images/banner.png');
+  background-size: cover;
 }
 
 .logo {

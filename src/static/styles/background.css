@@ -1,0 +1,14 @@
+body  {
+    background-image: url('/static/images/rays_gradient.png');
+    background-size: auto;
+}
+
+/* background-image: url('/static/images/Blue_Logo_CWE.png') */
+
+/* html { 
+    background: url(/static/images/BlueCallout.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  } */

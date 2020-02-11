@@ -18,14 +18,14 @@
   }
   
   .blue-column-flex {
-    background-color: blue;
+    /* background-color: blue; */
     height: 300px;
     font-size: 20px
     /* width: 75%; Use double-column-flex instead */
   }
   
   .green-column-flex {
-    background-color: green;
+    /* background-color: green; */
     height: 50px;
   }
   
