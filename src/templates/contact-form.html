@@ -1,0 +1,42 @@
+<!-- Style Used for Live Server Testing -->
+<!-- <head>
+    <link rel="stylesheet" href="/Central-West-End-Toastmasters/src/static/styles/contact-form.css" rel="stylesheet">
+</head> -->
+
+{% block head %}
+<!-- Style Used for Flask Prod Environment -->
+<head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/contact-form.css') }}" rel="stylesheet">
+</head>
+
+<h1>Contact Us</h1>
+
+<div class="contact-form">
+    <form method="POST">
+        <!-- <input type='text' name='name' placeholder='Enter your name' /><br/>
+        <input type='text' name='email' placeholder='Enter your email address' /><br/> -->
+
+        <!-- <label for="subject">Subject</label> -->
+        <!-- <p></p> Space -->
+        <div class="split-input">
+            <div>
+                <input type="text" name="name" id="name" placeholder="Enter your name" /><br/>
+            </div>
+        
+            <div class="split-input">
+                <input type="email" name="email" id="email" placeholder="Enter your email" /><br/>
+            </div>
+        </div>
+
+        <!-- <label for="message">Message</label> -->
+        <!-- <p></p> Space -->
+        <textarea name="message" id="message-box" placeholder="Enter your message.."></textarea>
+        <p></p>
+
+        <input type='submit' value='Submit' />
+    </form>
+</div>
+
+<p></p> <!-- Space -->
+
+{% endblock %}

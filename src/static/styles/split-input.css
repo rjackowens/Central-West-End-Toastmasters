@@ -1,0 +1,11 @@
+/* div {
+    display: inline-block;
+} */
+
+.split-input div {
+    display: inline-block;
+}
+
+/* div label {
+    display: block;
+} */

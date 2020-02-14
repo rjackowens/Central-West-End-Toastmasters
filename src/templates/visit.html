@@ -4,32 +4,34 @@
 <h1 style="color:black;text-align:center;margin:20px auto">Visiting</h1>
 
 <link rel="stylesheet" href="{{ url_for('static',filename='styles/background.css') }}">
-<body></body>
 
-<p style="text-align:center;">We're located on 4240 Duncan Avenue, St. Louis MO 63110</p>
+<body>
+  <p style="text-align:center;">We're located on 4240 Duncan Avenue, St. Louis MO 63110</p>
 
-<p align="center">
-  <iframe
-    width="600"
-    height="450"
-    frameborder="0" style="border:0"
-    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAZApkBQ9bjYqXUuOqsFoUoVfWrPjM2t_Y
-      &q=4240+Duncan+Ave,+St.+Louis,+MO+63110" allowfullscreen>
-  </iframe>
-</p>
+  <p align="center">
+    <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAZApkBQ9bjYqXUuOqsFoUoVfWrPjM2t_Y
+          &q=4240+Duncan+Ave,+St.+Louis,+MO+63110" allowfullscreen>
+    </iframe>
+  </p>
 
-<p style="text-align: center;"><strong>Location<br /></strong>Havana Room, 2nd Floor<br />4240 Duncan Ave <br />St Louis, MO 63110</p>
+  <p style="text-align: center;"><strong>Location<br /></strong>Havana Room, 2nd Floor<br />4240 Duncan Ave <br />St Louis,
+    MO 63110</p>
 
-<p style="text-align: center;"><strong>Time<br /></strong>We meet every Tuesday from 7:00 PM - 8:30 PM.</p>
+  <p style="text-align: center;"><strong>Time<br /></strong>We meet every Tuesday from 7:00 PM - 8:30 PM.</p>
 
-<p style="text-align: center;"><strong>Format<br /></strong>Our meetings consist of three main sections:</p>
-<ol>
-<li style="text-align: center;">1. Prepared Speeches</li>
-<li style="text-align: center;">2. Evaluations</li>
-<li style="text-align: center;">3. Impromptu speaking (aka Table Topics)</li>
-</ol>
+  <p style="text-align: center;"><strong>Format<br /></strong>Our meetings consist of three main sections:</p>
+  <ol>
+    <li style="text-align: center;">1. Prepared Speeches</li>
+    <li style="text-align: center;">2. Evaluations</li>
+    <li style="text-align: center;">3. Impromptu speaking (aka Table Topics)</li>
+  </ol>
 
-<p style="text-align: center;"><strong>What to Expect<br /></strong>A Toastmaster will faciliate the meeting and introduce guests and explain the meeting format.</p>
-<p style="text-align: center;">Guests are asked to provide a short introduction and participate in a 1-2 minute Table Topics speech.</p>
+  <p style="text-align: center;"><strong>What to Expect<br /></strong>A Toastmaster will faciliate the meeting and introduce
+    guests and explain the meeting format.</p>
+  <p style="text-align: center;">Guests are asked to provide a short introduction and participate in a 1-2 minute Table Topics
+    speech.</p>
+</body>
+
+{% include "contact-form.html" %}
 
 {% endblock %}

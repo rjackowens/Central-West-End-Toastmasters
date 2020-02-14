@@ -1,0 +1,61 @@
+.contact-form {
+    /* display : inline-block; */
+    /* width: 70%; */
+    text-align : center;
+    margin: 0;
+    padding: 0;
+    background-color: lightslategray; /* Color of contact form */
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], input[type=email], select, textarea {
+    width: 50%; /* Bar goes across the screen */
+    padding: 10px; /* Input bar padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 12px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+.split-input div {
+    display: inline-block;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: rgb(15, 72, 216);
+    color: white;
+    padding: 6px 10px; /* Button Size */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+/* When moving the mouse over the submit button, add a darker color */
+input[type=submit]:hover {
+    background-color: rgb(9, 49, 150);
+  }
+
+/* Style labels above inputs. Can delete if not using labels */
+label[for=message], label[for=name] {
+    /* background-color: aquamarine; */
+    /* float: left; */
+    /* padding: 1px 2px; */
+    font-weight: bold;
+}
+
+/* Selecting id tag of message-box */
+#message-box {
+    /* background-color: rgb(237, 221, 224); */
+    height: 100px;
+    /* padding: 20px 10px;
+    line-height: 28px; */
+  }
+
+h1 {
+    color:black !important;
+    text-align: center;
+    margin: 10px;
+}

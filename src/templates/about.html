@@ -3,13 +3,22 @@
 
 <h1 style="color:black;text-align:center;margin:20px auto">About Us</h1>
 
-<!-- <link rel="stylesheet" href="{{ url_for('static',filename='styles/background.css') }}">
-<body></body> -->
+<body>
+  <ul style="list-style-type:circle;">
+    <li style="font-weight: 400;"><span style="font-weight: 400;">Club focused on public speaking, leadership, and communication</span></li>
+    <li style="font-weight: 400;"><span style="font-weight: 400;">Focused on becoming better, more-rounded people</span></li>
+    <li style="font-weight: 400;"><span style="font-weight: 400;">Diverse and supportive atmosphere</span></li>
+    <li style="font-weight: 400;"><span style="font-weight: 400;">All guests are welcome</span></li>
+    <li style="font-weight: 400;"><span style="font-weight: 400;">Club founded in 2016</span></li>
+  </ul>
 
-<!-- YouTube Video Link -->
-<p align="center">
-  <iframe height="600" width="1200" src="https://www.youtube.com/embed/383gehepo8M">
-  </iframe>
-</p>
+  <!-- YouTube Video Link -->
+  <p align="center">
+    <iframe height="600" width="1200" src="https://www.youtube.com/embed/383gehepo8M">
+    </iframe>
+  </p>
+</body>
+
+{% include "contact-form.html" %}
 
 {% endblock %}
