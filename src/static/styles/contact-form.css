@@ -1,3 +1,9 @@
+h1 {
+    color:black !important;
+    text-align: center;
+    margin: 10px;
+}
+
 .contact-form {
     /* display : inline-block; */
     /* width: 70%; */
@@ -7,18 +13,48 @@
     background-color: lightslategray; /* Color of contact form */
 }
 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], input[type=email], select, textarea {
-    width: 50%; /* Bar goes across the screen */
+/* Style name input box */
+input[type=text] {
+    width: 120%;
+    margin-left: -20%;
+    /* margin-inline-end: -20%; */
+    padding: 10px; /* Input bar padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 9px; /* Add a top margin */
+    /* margin-bottom: 12px; Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+/* Style email input box */
+input[type=email] {
+    width: 120%;
+    margin-left: -20%;
+    margin-right: 60%;
+    margin-inline-end: -20%;
+    margin-inline-start: 0%;
+    padding: 10px; /* Input bar padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 8px; /* Add a top margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+
+/* Style message input box */
+textarea {
+    width: 27%; /* Bar goes across the screen */
     padding: 10px; /* Input bar padding */ 
     border: 1px solid #ccc; /* Gray border */
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
-    margin-bottom: 12px; /* Bottom margin */
+    margin-bottom: 0px;
     resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
   }
 
+/* Set name and email input box on same line */
 .split-input div {
     display: inline-block;
 }
@@ -31,6 +67,7 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-bottom: 8px;
   }
 
 /* When moving the mouse over the submit button, add a darker color */
@@ -53,9 +90,3 @@ label[for=message], label[for=name] {
     /* padding: 20px 10px;
     line-height: 28px; */
   }
-
-h1 {
-    color:black !important;
-    text-align: center;
-    margin: 10px;
-}

@@ -1,13 +1,15 @@
-{% block head %}
-<!-- Style Used for Flask Prod Environment -->
+<!-- Style Used for Live Server Testing -->
 <head>
-    <link rel="stylesheet" href="{{ url_for('static',filename='styles/contact-form.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="/Central-West-End-Toastmasters/src/static/styles/contact-form.css" rel="stylesheet">
 </head>
 
 <h1>Contact Us</h1>
 
 <div class="contact-form">
     <form method="POST">
+        <!-- <input type='text' name='name' placeholder='Enter your name' /><br/>
+        <input type='text' name='email' placeholder='Enter your email address' /><br/> -->
+
         <!-- <label for="subject">Subject</label> -->
         <!-- <p></p> Space -->
         <div class="split-input">
@@ -30,5 +32,3 @@
 </div>
 
 <p></p> <!-- Space -->
-
-{% endblock %}

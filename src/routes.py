@@ -32,6 +32,7 @@ def visit():
         send_email(str(name), str(message))
     return render_template("visit.html")
 
+# Used for testing contact form; Remove when no longer necessary
 @app.route("/form", methods=["GET", "POST"])
 def email():
     if request.method == "POST":
