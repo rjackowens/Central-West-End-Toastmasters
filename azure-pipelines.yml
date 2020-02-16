@@ -13,9 +13,9 @@ steps:
   displayName: 'Build Image'
   inputs:
     script: |
-      docker build -t cwe-toastmasters . 
-      --build-arg SENDER_EMAIL=$(SENDER_EMAIL) 
-      --build-arg RECEIVER_EMAIL=$(RECEIVER_EMAIL) 
+      docker build -t cwe-toastmasters . \
+      --build-arg SENDER_EMAIL=$(SENDER_EMAIL) \
+      --build-arg RECEIVER_EMAIL=$(RECEIVER_EMAIL) \
       --build-arg EMAIL_PASSWORD=$(EMAIL_PASSWORD)
     workingDirectory: '$(System.DefaultWorkingDirectory)'
 
