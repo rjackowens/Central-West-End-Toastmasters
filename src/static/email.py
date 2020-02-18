@@ -6,7 +6,7 @@ sender_email = os.getenv('SENDER_EMAIL')
 receiver_email = os.getenv('RECEIVER_EMAIL')
 password = os.getenv('EMAIL_PASSWORD')
 
-def send_email(message_subject, message_body):
+def send_email(message_subject, message_email, message_body):
     """Send an email via Gmail SMTP Server"""
 
     port = 465  # For SSL
@@ -14,6 +14,7 @@ def send_email(message_subject, message_body):
 
     message = f"""\
     Subject: {message_subject}
+    Name: {message_email}
 
     {message_body}
 
