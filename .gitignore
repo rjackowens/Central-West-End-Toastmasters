@@ -1,3 +1,4 @@
 src/__pycache__
 src/static/__pycache__/*
 src/static/secrets.py
+.elasticbeanstalk
