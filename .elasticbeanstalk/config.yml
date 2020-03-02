@@ -1,0 +1,22 @@
+branch-defaults:
+  master:
+    environment: CWE-ENV
+    group_suffix: null
+environment-defaults:
+  CWE-ENV:
+    branch: null
+    repository: null
+global:
+  application_name: cwe-website
+  branch: null
+  default_ec2_keyname: MyNewKeyPair
+  default_platform: python-3.6
+  default_region: us-east-2
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: null
+  repository: null
+  sc: git
+  workspace_type: Application
