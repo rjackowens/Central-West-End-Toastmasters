@@ -37,7 +37,7 @@ pyzmq==18.1.0
 qtconsole==4.5.4
 regex==2018.1.10
 requests==2.19.1
-ujson==1.35
+ujson==5.2.0
 urllib3==1.23
 virtualenv==16.7.7
 wcwidth==0.1.7
